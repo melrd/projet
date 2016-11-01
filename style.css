@@ -1,0 +1,220 @@
+body
+{
+	margin: 0;
+}
+
+
+nav
+{
+	background-color: #B40404;/*#D50000;*/
+
+	height: 5vh;
+	width: 100%;
+	min-height: 50px ;
+
+	margin: 0;
+	position: fixed;
+	top:0;
+	left:0;
+
+	color: white;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*nav id
+{
+	border-right: 5px solid black;
+} */
+
+footer
+{
+	background-color: #B40404;
+
+	height: 5vh;
+	width: 100%;
+	min-height: 50px ;
+
+	margin: 0;
+	position: fixed;
+	bottom:0;
+	left:0;
+
+	color: white;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.container
+{
+	background-image: url("fond1.jpeg");
+	background-repeat: repeat;
+	width: 100%;
+	min-height: calc(100vh - 10vh);
+
+	margin: 0;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation
+{
+	height: 5vh;
+	width: 100%;
+	min-height: 50px ;
+
+	margin: 6px;
+	position: fixed;
+	bottom: 5vh ;
+	left:0;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.title
+{
+	left: 0;
+	top : 5vh;
+	width: 100%;
+	height: 7vh;
+	min-height: 20px;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	
+	font-size: x-large;
+	font-weight: bold;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	align-self: flex-start;
+}
+
+.text
+{
+	margin: 5px;
+	width: 100%;
+
+	top: 15vh;
+	margin-left: 5px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+.nowrite
+{
+	justify-content: center;
+	align-content: center;
+}
+
+.object
+{
+	width: 20vw;
+	min-width: 100px;
+
+	margin: 3vh;
+	
+	background-color: black;
+	padding: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.object img
+{
+	width: 80%;
+	max-width: 20vw;
+
+	height: calc(0.8 * (20vw - 10px));
+	max-height: 20vw;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.object .name
+{
+	font-size: large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.object .description, .object .price
+{
+	margin-bottom: 10px;
+}
+
+.object .add
+{
+	background-color: #B40404;
+	padding: 2vh;
+}
+
+
+BUTTON
+{
+	border: none;
+	height: 30px;
+
+	background-color: black; /*212121*/
+	color: white;
+}
+
+
+a:link, a:visited, a:active
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+@media (max-height: 1000px)
+{
+	.container
+	{
+		margin-top: 50px;
+		min-height: calc(100vh - 100px);
+		margin-bottom: 50px;
+	}
+
+	.text
+	{
+		top:100px;
+	}
+
+	.navigation
+	{
+		bottom: 50px;
+	}
+
+	.container .title
+	{
+		top : 50px;
+	}
+}
